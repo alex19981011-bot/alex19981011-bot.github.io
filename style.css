@@ -331,3 +331,27 @@
   text-align: center;
   letter-spacing: 0;
 }
+/* Original CSS is injected before the following refactor enhancements. */
+
+.frame {
+  min-width: 0;
+  margin-inline: auto;
+}
+
+.frame img {
+  display: block;
+  max-width: 100%;
+}
+
+.frame address.element-3 {
+  font-style: normal;
+}
+
+.frame time.element-4 {
+  display: block;
+}
+
+.frame .group-5 {
+  padding: 0;
+  list-style: none;
+}
