@@ -20,26 +20,43 @@ body {
 .B1 {
   display: flex;
   width: 100%;
+  background-image: url(./img/B1back.svg);
+  background-position: center;
+  background-size: cover; 
+  justify-content: center;
 }
 
 .frame .element {
   width: auto;
-  height: 1em;
+  height: 0.9em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
   /* min-height: 740px; */
   flex-shrink: 0;
   min-width: max-content;
+  object-fit: contain; 
 }
 
 .B1R {
-  height: calc(1em - 1px);
+  position: absolute;
+  top: 0px;   /* Расстояние от верхнего края родителя */
+  right: 0px;   /* Центрируем, если необходимо */
+
+  height: 0.83em;
+  margin:  25px 25px 25px 0;
   flex-grow: 1; /* Растягивается и заполняет пустоту слева и справа */
-  background-color: #2c1331;
+  /* background-color: #2c1331; */
 }
 
 .B1L {
-  height: calc(1em - 1px);
+  position: absolute;
+  top: 0px;   /* Расстояние от верхнего края родителя */
+  left: 0px;   /* Центрируем, если необходимо */
+
+  height: 0.83em;
+  margin:  25px 0 25px 25px;
   flex-grow: 1; /* Растягивается и заполняет пустоту слева и справа */
-  background-color: #2c1331;
+  /* background-color: #2c1331; */
 }
 
 .frame .B2img {
@@ -84,10 +101,15 @@ body {
 
 .frame .B6img {
   margin-top: 30px;
-  width: auto;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  width: 100%;
   height: 0.8em;
   min-height: 545px;
-  object-fit: cover;
+  object-fit: contain;
+  background-image: url(./img/B6back.svg);
+  background-position: center;
+  background-size: cover; 
 
   /* min-width: max-content; */
 }
@@ -119,11 +141,17 @@ body {
   }
 
   .B1L {
-    height: calc(1em - 22px);
+    height: 0.83em;
   }
 
   .B1R {
-    height: calc(1em - 22px);
+    height: 0.83em;
+  }
+
+  .frame .B6img {
+    padding-top: 80px;
+    padding-bottom: 150px;
+    height: 0.8em;
   }
 }
 
@@ -137,11 +165,17 @@ body {
   }
 
   .B1L {
-    height: calc(1em - 22px);
+    height: 0.83em;
   }
 
   .B1R {
-    height: calc(1em - 22px);
+    height: 0.83em;
+  }
+
+  .frame .B6img {
+    padding-top: 80px;
+    padding-bottom: 150px;
+    height: 0.8em;
   }
 }
 
@@ -155,11 +189,17 @@ body {
   }
 
   .B1L {
-    height: calc(1em - 22px);
+    height: 0.83em;
   }
 
   .B1R {
-    height: calc(1em - 22px);
+    height: 0.83em;
+  }
+
+  .frame .B6img {
+    padding-top: 80px;
+    padding-bottom: 150px;
+    height: 0.8em;
   }
 }
 
@@ -173,10 +213,20 @@ body {
   }
 
   .B1L {
-    height: calc(1em - 22px);
+    height: 0.83em;
   }
 
   .B1R {
-    height: calc(1em - 22px);
+    height: 0.83em;
+  }
+  
+  .frame .element {
+    
+  }
+
+  .frame .B6img {
+    padding-top: 80px;
+    padding-bottom: 150px;
+    height: 0.8em;
   }
 }
